@@ -1,11 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\InveytController;
 
-Route::get('/', function () {
-    return "Bienvenido a la beta ";
-    //return view('welcome');
-});
+
+
+Route::get('/', [InveytController::class, 'index']);
 
 Route::get('/perfil', function () {
     return "Bienvenido al perfil ";
