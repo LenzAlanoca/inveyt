@@ -9,3 +9,6 @@
     width: 100%;
     position: absolute;
 }
+.transitiones{
+    transition: all 0.4s;
+}

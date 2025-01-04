@@ -13,7 +13,7 @@
 <body>
     <x-nav>
     </x-nav>
-    <img src="https://cdn.pixabay.com/photo/2016/11/29/02/14/man-1866784_1280.jpg" width="100%" alt="">
+    <img src="https://cdn.pixabay.com/photo/2022/06/21/14/30/background-7275953_1280.jpg" width="100%" alt="">
     <x-footer>
 
     </x-footer>
