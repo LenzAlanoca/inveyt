@@ -2,39 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-.bord {
-    position: relative; /* Necesario para posicionar el texto */
-    overflow: hidden; /* Para evitar que los bordes redondeados de .imagenHome se desborden */
-    border: 1px solid red;
-    border-radius: 15px; /* Bordes redondeados */
-    cursor: pointer; /* Indica que el elemento es clickeable */
+/* Navegación */
+.navi {
+    width: 100%;
+    position: absolute; /* Superpone la navegación sobre la imagen */
+    top: 0; /* Fija la navegación en la parte superior */
+    z-index: 30; /* Asegura que esté por encima de la imagen y el texto */
 }
 
+/* Contenedor de la imagen */
+.bord {
+    position: relative; /* Contiene el texto centrado */
+    overflow: hidden; /* Evita desbordamientos */
+}
+
+/* Imagen */
 .imagenHome {
     width: 100%;
     height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Elimina espacios blancos no deseados en imágenes */
+    display: block;
 }
 
+/* Texto centrado sobre la imagen */
 .centerbody {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centra vertical y horizontalmente */
-    z-index: 20; /* Asegura que el texto esté encima de la imagen */
+    transform: translate(-50%, -50%);
+    z-index: 20; /* Por debajo de la navegación */
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 10px 20px;
-    border-radius: 10px; /* Bordes redondeados del contenedor del texto */
+    padding: 5px 25px;
+    border-radius: 10px;
 }
 
+/* Hover del texto */
 .centerbody h1 {
+    cursor: pointer;
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: bold;
+    transition: color 0.4s ease; /* Efecto suave en hover */
 }
-.navi {
-    width: 100%;
-    position: absolute;
+.centerbody h1:hover {
+    color: #bebebe;
+}
+
+/* Escalado del texto en pantallas más grandes */
+@media (min-width: 640px) {
+    .centerbody h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .centerbody h1 {
+        font-size: 2rem;
+    }
 }
