@@ -2,13 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-.bord{
+.bord {
+    position: relative; /* Necesario para posicionar el texto */
+    overflow: hidden; /* Para evitar que los bordes redondeados de .imagenHome se desborden */
     border: 1px solid red;
+    border-radius: 15px; /* Bordes redondeados */
+    cursor: pointer; /* Indica que el elemento es clickeable */
 }
-.navi{
+
+.imagenHome {
     width: 100%;
-    position: absolute;
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina espacios blancos no deseados en imágenes */
 }
-.transitiones{
-    transition: all 0.4s;
+
+.centerbody {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra vertical y horizontalmente */
+    z-index: 20; /* Asegura que el texto esté encima de la imagen */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px; /* Bordes redondeados del contenedor del texto */
+}
+
+.centerbody h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
 }

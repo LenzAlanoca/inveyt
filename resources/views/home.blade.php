@@ -11,12 +11,9 @@
 </head>
 
 <body>
-    <x-nav>
-    </x-nav>
-    <img src="https://cdn.pixabay.com/photo/2022/06/21/14/30/background-7275953_1280.jpg" width="100%" alt="">
-    <x-footer>
-
-    </x-footer>
+    <x-nav></x-nav>
+    <x-bodyHome></x-bodyHome>
+    <x-footer></x-footer>
 </body>
 
 </html>
