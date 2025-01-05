@@ -34,3 +34,7 @@
     font-size: 1.5rem;
     font-weight: bold;
 }
+.navi {
+    width: 100%;
+    position: absolute;
+}
