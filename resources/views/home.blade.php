@@ -15,8 +15,6 @@
 
 <body style="font-family: Comfortaa">
     <div class="content">
-
-
         <x-nav></x-nav>
         <x-bodyHome></x-bodyHome>
         <x-footer></x-footer>
