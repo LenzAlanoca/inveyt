@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.content {
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
 /* Navegación */
 .navi {
     width: 100%;
@@ -25,39 +30,52 @@
 
 /* Texto centrado sobre la imagen */
 .centerbody {
+    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 20; /* Por debajo de la navegación */
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+
     color: white;
-    padding: 5px 25px;
-    border-radius: 10px;
 }
 
 /* Hover del texto */
-.centerbody h1 {
+.centerbody h2 {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 25px;
+    border-radius: 15px;
     cursor: pointer;
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     font-weight: bold;
-    transition: color 0.4s ease; /* Efecto suave en hover */
+    transition: all 0.4s;
 }
-.centerbody h1:hover {
+.centerbody h1 {
+    padding-bottom: 5px;
+}
+.centerbody h2:hover {
+    background-color: rgba(31, 30, 30, 0.5);
     color: #bebebe;
+    transition: all 0.3s;
 }
 
 /* Escalado del texto en pantallas más grandes */
-@media (min-width: 640px) {
-    .centerbody h1 {
-        font-size: 1.5rem;
+@media (min-width: 350px) {
+    .centerbody h2 {
+        font-size: 1rem;
+    }
+    .centerbody {
+        margin-top: 10%;
     }
 }
 
 @media (min-width: 1024px) {
-    .centerbody h1 {
-        font-size: 2rem;
+    .centerbody h2 {
+        font-size: 1.75rem;
+    }
+    .centerbody {
+        margin-top: 1%;
     }
 }
