@@ -2,14 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InveytController;
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\SigninController;
 
 
 
 
 Route::get('/', [InveytController::class, 'index']);
 
-Route::get('/Login', [LoginController::class, 'login']);
+Route::get('/Login', [SigninController::class, 'sigin']);
 
 Route::get('/perfil', function () {
     return "Bienvenido al perfil ";
