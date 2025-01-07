@@ -9,7 +9,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
     </style>
     @vite('resources/css/app.css')
-    <title>Sigin</title>
+    <title>Login</title>
 </head>
 
 <body style="font-family: Comfortaa">
@@ -19,7 +19,9 @@
 
             </div>
         </header>
-        <x-bodySignin></x-bodySignin>
+        <main>
+            <h1>Pantalla de login</h1>
+        </main>
         <x-footer></x-footer>
 
     </div>
