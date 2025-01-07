@@ -60,7 +60,7 @@
                             Sign in
                         </button>
                     </div>
-                    <p class="text-gray-800 text-sm !mt-8 text-center">Don't have an account? <a
+                    <p class="text-gray-800 text-sm !mt-8 text-center">No tienes una cuenta? <a
                             href="javascript:void(0);"
                             class="text-blue-600 hover:underline ml-1 whitespace-nowrap font-semibold">Register here</a>
                     </p>
