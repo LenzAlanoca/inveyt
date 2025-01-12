@@ -14,11 +14,7 @@
 
 <body style="font-family: Comfortaa">
     <div class="content">
-        <header>
-            <div>
-
-            </div>
-        </header>
+        <x-nav></x-nav>
         <x-bodySignin></x-bodySignin>
         <x-footer></x-footer>
 
