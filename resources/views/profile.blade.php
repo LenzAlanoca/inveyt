@@ -16,12 +16,9 @@
 <body style="font-family: Comfortaa">
     <div class="content">
         <x-nav></x-nav>
-        <main>
-            <br><br><br><br><br><br><br><b><br><br><br>
-                <h1>Profile View</h1>
-                <br><br><br><br><br><br><br><b><br><br><br>
 
-        </main>
+
+        <x-bodyProfile></x-bodyProfile>
 
         <x-footer></x-footer>
     </div>
