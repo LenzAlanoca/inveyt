@@ -16,16 +16,7 @@
 <body style="font-family: Comfortaa">
     <div class="content">
         <x-nav></x-nav>
-        <main>
-            <h1>Acerca de</h1>
-            <h1>Acerca de</h1>
-            <h1>Acerca de</h1>
-            <h1>Acerca de</h1>
-
-            <h1>Acerca de</h1>
-            <h1>Acerca de</h1>
-            <h1>Acerca de</h1>
-        </main>
+        <x-bodyAcercade></x-bodyAcercade>
         <x-footer></x-footer>
     </div>
 
