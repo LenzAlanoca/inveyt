@@ -579,8 +579,8 @@
   .about_section .detail-box a {
     display: inline-block;
     padding: 8px 35px;
-    background-color: #8019c8;
-    color: #ffffff;
+    background-color: #33313523;
+    color: #000;
     border-radius: 5px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -589,7 +589,8 @@
   }
   
   .about_section .detail-box a:hover {
-    background-color: #541184;
+    background-color: #232324d8;
+    color: #ffffff;
   }
   
   .product_section {

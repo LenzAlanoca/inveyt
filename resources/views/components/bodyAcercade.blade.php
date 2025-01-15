@@ -14,15 +14,15 @@
             <div class="col-md-6">
                 <div class="detail-box">
                     <h2>
-                        About Our Shop
+                        Acerca de Nosotros
                     </h2>
                     <p>
-                        There are many variations of passages of Lorem Ipsum
-                        There are many variations of
-                        passages of Lorem Ipsum
+                        Hacemos el manejo y disponibilidad de tu inventario mas facil
+                        con nosotros no tendras que preocuparte de complicaciones o
+                        licencia por que es Gratis
                     </p>
                     <a href="">
-                        Read More
+                        Saber Mas
                     </a>
                 </div>
             </div>
